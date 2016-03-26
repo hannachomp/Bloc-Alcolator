@@ -33,8 +33,8 @@
                                     <color key="titleColor" red="0.1467688197" green="0.63973976600000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="???" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yzJ-gn-gkd">
-                                <rect key="frame" x="253" y="280" width="94" height="82"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yzJ-gn-gkd">
+                                <rect key="frame" x="236" y="280" width="129" height="82"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="81" id="GgO-jt-k3h"/>
                                     <constraint firstAttribute="width" constant="300" id="WmJ-JC-tXh"/>
@@ -62,12 +62,16 @@
                             <constraint firstItem="yzJ-gn-gkd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="15" id="OVt-N7-fLm"/>
                             <constraint firstItem="8g7-FK-zLX" firstAttribute="top" secondItem="8jT-fN-Yue" secondAttribute="bottom" constant="62" id="Uf6-y5-dBD"/>
                             <constraint firstItem="8oD-tj-Zrd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="ad0-zX-2lb"/>
+                            <constraint firstItem="yzJ-gn-gkd" firstAttribute="centerX" secondItem="8g7-FK-zLX" secondAttribute="centerX" id="f81-h7-va1"/>
                             <constraint firstItem="8jT-fN-Yue" firstAttribute="top" secondItem="8oD-tj-Zrd" secondAttribute="bottom" constant="14" id="nct-aJ-xT3"/>
                             <constraint firstItem="8oD-tj-Zrd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="31" id="oJP-el-fqJ"/>
                             <constraint firstItem="8g7-FK-zLX" firstAttribute="centerX" secondItem="8jT-fN-Yue" secondAttribute="centerX" id="rI1-lV-wIb"/>
+                            <constraint firstItem="yzJ-gn-gkd" firstAttribute="width" secondItem="8g7-FK-zLX" secondAttribute="width" id="uRi-vB-r8L"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="F4r-8c-m3x"/>
+                                <exclude reference="OVt-N7-fLm"/>
                                 <exclude reference="MZN-bb-Neg"/>
                             </mask>
                         </variation>
