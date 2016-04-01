@@ -14,6 +14,13 @@
 
 @implementation WhiskeyViewController
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view, typically from a nib.
+    self.title = NSLocalizedString(@"Whiskey", @"Whiskey");
+}
+
+
 -(void)buttonPressed:(UIButton *)sender;
 {
     [self.beerPercentTextField resignFirstResponder];
