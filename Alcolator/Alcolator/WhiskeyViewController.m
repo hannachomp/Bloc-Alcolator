@@ -17,9 +17,22 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.title = NSLocalizedString(@"Whiskey", @"Whiskey");
 }
 
+
+- (IBAction)sliderValueChange:(UISlider *)sender {
+    NSLog(@"Slider value changed to %f", sender.value);
+    [self.beerPercentTextField resignFirstResponder];
+    
+    NSString *whiskeyLabel;
+    if ((int) sender.value > 1) {
+        whiskeyLabel = @"shots";
+    } else {
+        whiskeyLabel = @"shot";
+    }
+    
+    self.navigationItem.title = [NSString stringWithFormat:@"Whiskey (%d %@)",(int) sender.value, whiskeyLabel];
+}
 
 -(void)buttonPressed:(UIButton *)sender;
 {
