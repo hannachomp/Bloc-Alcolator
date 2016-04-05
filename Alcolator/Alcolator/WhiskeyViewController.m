@@ -24,15 +24,6 @@
     NSLog(@"Slider value changed to %f", sender.value);
     [self.beerPercentTextField resignFirstResponder];
     
-    NSString *whiskeyLabel;
-    if ((int) sender.value > 1) {
-        whiskeyLabel = @"shots";
-    } else {
-        whiskeyLabel = @"shot";
-    }
-    
-    self.navigationItem.title = [NSString stringWithFormat:@"Whiskey (%d %@)",(int) sender.value, whiskeyLabel];
-    [self.tabBarItem setBadgeValue:[NSString stringWithFormat:@"%d", (int) sender.value]];
 }
 
 -(void)buttonPressed:(UIButton *)sender;
@@ -63,6 +54,8 @@
     
     NSString *resultText = [NSString stringWithFormat:NSLocalizedString(@"%d %@ (with %.2f%% alcohol) contains as much alcohol as %.1f %@ of whiskey.", nil), numberOfBeers, beerText, [self.beerPercentTextField.text floatValue], numberOfWhiskeyGlassesForEquivalentAlcoholAmount, whiskeyText];
     self.resultLabel.text = resultText;
+    
+     [self.tabBarItem setBadgeValue:[NSString stringWithFormat:@"%d", (int) ceilf(numberOfWhiskeyGlassesForEquivalentAlcoholAmount)]];
     
 }
 
