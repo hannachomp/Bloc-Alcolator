@@ -32,6 +32,7 @@
     NSLog(@"Slider value changed to %f", sender.value);
     [self.beerPercentTextField resignFirstResponder];
     
+    
     NSString *wineLabel;
     if ((int) sender.value > 1) {
         wineLabel = @"glasses";
@@ -40,6 +41,8 @@
     }
 
      self.navigationItem.title = [NSString stringWithFormat:@"Wine (%d %@)",(int) sender.value, wineLabel];
+    
+    [self.tabBarItem setBadgeValue:[NSString stringWithFormat:@"%d", (int) sender.value]];
 }
 
 

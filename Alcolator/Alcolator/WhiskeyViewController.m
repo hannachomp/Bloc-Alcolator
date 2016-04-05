@@ -32,6 +32,7 @@
     }
     
     self.navigationItem.title = [NSString stringWithFormat:@"Whiskey (%d %@)",(int) sender.value, whiskeyLabel];
+    [self.tabBarItem setBadgeValue:[NSString stringWithFormat:@"%d", (int) sender.value]];
 }
 
 -(void)buttonPressed:(UIButton *)sender;
